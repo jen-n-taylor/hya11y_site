@@ -1,0 +1,13 @@
+// -------- MANIFEST ---------
+
+// SETUP
+@import 'components/setup';
+
+// COMPONENTS ----------------
+@import "components/mixins";
+@import 'components/typography';
+@import 'components/globals';
+@import 'components/header';
+
+// PAGES ---------------------
+@import 'pages/home';

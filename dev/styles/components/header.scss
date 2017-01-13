@@ -1,0 +1,46 @@
+// ---------- HEADER ----------
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 0;
+
+  .a11y-logo {
+    height: 60px;
+    width: 60px;
+    fill: #D12026;
+  }
+}
+
+nav {
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  li {
+    list-style-type: none;
+    padding-right: 15px;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #231F20;
+
+    &:hover {
+      text-decoration: underline;
+      color: #D12026;
+    }
+  }
+}
