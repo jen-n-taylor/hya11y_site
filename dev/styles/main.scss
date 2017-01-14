@@ -5,9 +5,11 @@
 
 // COMPONENTS ----------------
 @import "components/mixins";
-@import 'components/typography';
 @import 'components/globals';
 @import 'components/header';
 
 // PAGES ---------------------
 @import 'pages/home';
+@import 'pages/speakers';
+@import 'pages/resources';
+@import 'pages/codeofconduct';

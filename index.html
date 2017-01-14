@@ -10,18 +10,19 @@
 </head>
 
 <body>
-
 <header>
+    <a id="skip-link" href="#main">Skip to main content</a>
     <div class="logo-container container">
       <!-- Accessibility, Alfonso Melolonta Urbán, The Noun Project. https://thenounproject.com/term/accessibility/1872/-->
       <svg class="a11y-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M49.863,0C22.324,0,0,22.324,0,49.863s22.324,49.863,49.863,49.863s49.863-22.324,49.863-49.863S77.401,0,49.863,0z   M49.107,9.903c3.572,0,6.464,2.891,6.464,6.44c0,3.572-2.892,6.463-6.464,6.463c-3.547,0-6.438-2.892-6.44-6.463  C42.667,12.794,45.558,9.903,49.107,9.903z M77.05,30.728l-19.184,2.424l0.008,19.204l9.294,31.025  c0.491,1.959-0.687,3.919-2.625,4.403c-1.937,0.484-3.918-0.583-4.406-2.542L50.616,57h-2.932l-8.759,28.828  c-0.733,1.881-2.828,2.746-4.707,2.013c-1.861-0.726-2.997-2.844-2.263-4.725L40,52.67V33.152l-17.674-2.405  c-1.814-0.146-3.046-1.743-2.898-3.557c0.133-1.828,1.783-3.185,3.596-3.039L44.497,26h9.417l22.866-1.885  c1.817-0.073,3.357,1.34,3.418,3.171C80.271,29.104,78.868,30.653,77.05,30.728z"></path></svg>
       <nav>
         <ul>
-          <li><a href="">Main</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Calendar</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#main">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="speakers.html">Speakers</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div> <!-- /.logo-container -->
@@ -29,34 +30,53 @@
 
 <main>
 
-  <section class="hero">
+  <section class="hero" id="main">
     <div class="container">
 
       <h1>HackerYou Web Accessibility Club</h1>
-      <p>A group of curious developers trying to make the web an inclusive space.</p>
+      <p>A group of curious junior developers working to make the web an inclusive space.</p>
     </div>
   </section> <!-- /.hero -->
 
-  <section class="about-us">
+  <section class="about-us" id="about">
     <div class="container">
       <h2>About Us</h2>
+      <div class="content-container">
+        <img src="">
+        <p></p>
+        <a href="code-of-conduct.html">Code of Conduct</a>
+      </div>
+
     </div>
   </section> <!-- /.about-us -->
 
-  <section class="calendar">
+  <section class="events" id="events">
     <div class="container">
-      <h2>Calendar</h2>
+      <h2>Events</h2>
+      <p>Our next event will take place in February!</p>
     </div>
   </section> <!-- /.calendar -->
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <h2>Get in touch</h2>
+      <a href="">Twitter</a>
+      <a href="">Email</a>
+      <p>Questions? Don't hesitate to get in touch!</p>
+      <
     </div>
   </section> <!-- /.contact -->
 
 </main>
 
+<footer>
+  <div class="container">
+    <p>&copy;	All rights reserved, 2017.</p>
+  </div> <!--/.container -->
+</footer>
+
+
+<script src="public/scripts/main.js"></script>
 
 </body>
 </html>

@@ -1,11 +1,18 @@
-// --------- GLOBALS ---------
+// --------- MIXINS ---------
+
+// MEDIA QUERIES ----------
 
 
-
-// COLORS ----------
+// COLORS -----------------
 
 $color-red: #D12026;
 $color-black: #231F20;
 $color-blue: #26A6C9;
 $grey-light: #EFEFED;
 $grey-dark: #898787;
+
+// FONTS ------------------
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+$font-a: 'Open Sans', sans-serif;

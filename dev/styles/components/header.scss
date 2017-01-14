@@ -1,19 +1,28 @@
 // ---------- HEADER ----------
 
-.header-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
+header {
+  padding: 0 50px;
+  border-bottom: 2px solid #F7F7F7;
 }
 
+#skip-link {
+  position: absolute;
+  top: 5px;
+  height: 0px;
+  width: 0px;
+
+
+  &:focus {
+    height: auto;
+    width: auto;
+  }
+}
 
 .logo-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 20px 0;
+  padding: 25px 0;
 
   .a11y-logo {
     height: 60px;
@@ -35,8 +44,10 @@ nav {
 
   a {
     text-decoration: none;
+    font-family: $font-a;
     font-weight: 600;
     color: #231F20;
+    font-size: 1.0625rem;
 
     &:hover {
       text-decoration: underline;

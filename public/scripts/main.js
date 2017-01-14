@@ -1,5 +1,5 @@
 "use strict";
 
-var ohHey = "Hello World";
-
-console.log(ohHey);
+window.onload = function () {
+  document.getElementById("skip-link").focus();
+};
