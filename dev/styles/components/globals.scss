@@ -3,7 +3,7 @@
 
 html {
   font-size: 100%;
-  font-style: sans-serif;
+  font-family: $font-a;
 }
 
 .container {
@@ -18,5 +18,28 @@ h2 {
 footer {
   background: #231F20;
   color: #EFEFED;
-  padding: 0 50px;
+  padding: 20px 50px;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: #EFEFED;
+      padding-left: 15px;
+    }
+
+    a:hover {
+      color: #26A6C9;
+    }
+
+  }
 }
