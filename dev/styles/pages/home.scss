@@ -1,15 +1,15 @@
 
 .hero, .about-us, .events, .contact {
-  padding: 50px;
+  padding: 70px 50px;
   font-family: $font-a;
 }
 
-.hero {
-  background: #F7F7F7;
+// HERO --------------------------
 
-  h1 {
-    margin-bottom: 20px;
-  }
+
+.hero {
+  background: $background;
+  padding: 150px 50px ;
 
   p {
     max-width: 700px;
@@ -19,6 +19,71 @@
   }
 }
 
-.events {
-  background: #F7F7F7;
+// ABOUT US -----------------------
+
+.about-us {
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  img {
+    width: 500px;
+  }
+
+  p {
+    width: 100%;
+    max-width: 500px;
+  }
 }
+
+// EVENTS -------------------------
+
+.events {
+  background: $background;
+  text-align: center;
+
+  p {
+    margin-bottom: 60px;
+  }
+}
+
+.events-card-container {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.event-card {
+  max-width: 30%;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 1px 20px 0 rgba(0,0,0,.05);
+  border: 1px solid rgba(146,151,149,0.19);
+
+  p {
+    font-size: .875rem;
+  }
+}
+
+.event-title {
+  margin: 20px 0 10px 0;
+  padding-bottom: 20px;
+
+  .svg-container {
+    height: 60px;
+    float: left;
+  }
+  svg {
+    height: 100%;
+    fill: $color-blue;
+    padding-right: 15px;
+  }
+  p {
+    foat: left;
+  }
+}
+
+// CONTACT --------------------------

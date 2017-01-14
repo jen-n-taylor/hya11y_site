@@ -9,10 +9,16 @@ $color-red: #D12026;
 $color-black: #231F20;
 $color-blue: #26A6C9;
 $grey-light: #EFEFED;
+$grey-border: #EAEBEB;
 $grey-dark: #898787;
+$background: #FAFAFA;
 
 // FONTS ------------------
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
 $font-a: 'Open Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+$font-header: 'Montserrat', sans-serif;

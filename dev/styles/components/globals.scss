@@ -11,13 +11,36 @@ html {
   margin: 0 auto;
 }
 
+h1 {
+  font-family: $font-header;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 h2 {
+  font-family: $font-header;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+p {
+  letter-spacing: 1px;
+  font-size: 0.9375;
+  line-height: 1.5;
+  margin: 10px 0 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: $color-red;
+
 
 }
 
+
 footer {
-  background: #231F20;
-  color: #EFEFED;
+  background: $color-black;
+  color: $grey-light;
   padding: 20px 50px;
 
   .container {
@@ -33,12 +56,12 @@ footer {
 
     a {
       text-decoration: none;
-      color: #EFEFED;
+      color: $grey-light;
       padding-left: 15px;
     }
 
     a:hover {
-      color: #26A6C9;
+      color: $color-blue;
     }
 
   }
