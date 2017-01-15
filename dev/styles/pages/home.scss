@@ -28,8 +28,15 @@
     justify-content: space-between;
   }
 
+  h2 {
+    margin-top: 0;
+  }
+
   img {
     width: 500px;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,.05);
+    border: 1px solid rgba(146,151,149,0.19);
+    margin-right: 25px;
   }
 
   p {
@@ -66,24 +73,80 @@
   p {
     font-size: .875rem;
   }
+
+  .date, .location {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .event-title {
   margin: 20px 0 10px 0;
-  padding-bottom: 20px;
+  height: 90px;
 
   .svg-container {
     height: 60px;
     float: left;
   }
+
   svg {
     height: 100%;
     fill: $color-blue;
     padding-right: 15px;
   }
+
   p {
-    foat: left;
+    float: left;
+  }
+}
+
+.event-info {
+  height: 205px;
+}
+
+.event-details {
+  padding: 0 0 25px 0;
+  p {
+    margin: 0;
+  }
+  ul {
+    padding: 0 0 0 20px;
+  }
+  li {
+    font-size: 0.875rem;
+    padding: 5px 0;
+    line-height: 1.5;
+    letter-spacing: .5px;
   }
 }
 
 // CONTACT --------------------------
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-a, .contact-b {
+  width: 45%;
+}
+
+.contact-a {
+  p:nth-of-type(2), p:nth-of-type(3) {
+    margin: 0;
+  }
+}
+
+.contact-b {
+  padding: 20px;
+  background: $background;
+;
+
+  h3 {
+    margin-top: 0;
+  }
+  p {
+    margin: 10px 0;
+  }
+}

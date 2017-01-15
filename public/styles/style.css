@@ -184,6 +184,8 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    footer .social-container p {
+      margin: 0; }
     footer .social-container a {
       text-decoration: none;
       color: #EFEFED;
@@ -270,8 +272,14 @@ nav a {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.about-us h2 {
+  margin-top: 0; }
+
 .about-us img {
-  width: 500px; }
+  width: 500px;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(146, 151, 149, 0.19);
+  margin-right: 25px; }
 
 .about-us p {
   width: 100%;
@@ -304,10 +312,13 @@ nav a {
   border: 1px solid rgba(146, 151, 149, 0.19); }
   .event-card p {
     font-size: .875rem; }
+  .event-card .date, .event-card .location {
+    margin: 0;
+    padding: 0; }
 
 .event-title {
   margin: 20px 0 10px 0;
-  padding-bottom: 20px; }
+  height: 90px; }
   .event-title .svg-container {
     height: 60px;
     float: left; }
@@ -316,7 +327,48 @@ nav a {
     fill: #26A6C9;
     padding-right: 15px; }
   .event-title p {
-    foat: left; }
+    float: left; }
+
+.event-info {
+  height: 205px; }
+
+.event-details {
+  padding: 0 0 25px 0; }
+  .event-details p {
+    margin: 0; }
+  .event-details ul {
+    padding: 0 0 0 20px; }
+  .event-details li {
+    font-size: 0.875rem;
+    padding: 5px 0;
+    line-height: 1.5;
+    letter-spacing: .5px; }
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.contact-a, .contact-b {
+  width: 45%; }
+
+.contact-a p:nth-of-type(2), .contact-a p:nth-of-type(3) {
+  margin: 0; }
+
+.contact-b {
+  padding: 20px;
+  background: #FAFAFA; }
+  .contact-b h3 {
+    margin-top: 0; }
+  .contact-b p {
+    margin: 10px 0; }
 
 .resources-main {
   padding: 0 50px 30px 50px; }
