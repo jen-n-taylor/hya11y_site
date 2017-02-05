@@ -1,57 +1,147 @@
 // ---------- HEADER ----------
 
 header {
-  padding: 0 50px;
   border-bottom: 1px solid #E6E8EA;
 }
 
-#skip-link {
-  position: absolute;
-  top: 5px;
-  height: 0px;
-  width: 0px;
-  overflow:hidden;
+// SKIP LINK ---------------------
+// #skip-link {
+//   position: absolute;
+//   top: 5px;
+//   height: 0px;
+//   width: 0px;
+//   overflow: hidden;
+//
+//   &:focus {
+//     height: auto;
+//     width: auto;
+//     color: $color-red;
+//   }
+// }
 
-  &:focus {
-    height: auto;
-    width: auto;
-  }
-}
-
+// LOGO CONTAINER ------------
 .logo-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 25px 0;
 
   .a11y-logo {
     height: 60px;
     width: 60px;
-    fill: #D12026;
+    fill: $color-red;
   }
 }
 
-nav {
+// MOBILE BUTTON ------------
+
+.a11y-logo {
+  display: none;
+}
+
+.menu-items {
+  width: 100%;
+
   ul {
-    display: flex;
-    flex-direction: row;
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
   }
 
   li {
-    list-style-type: none;
-    padding-right: 15px;
+    display: block;
+    width: 100%;
   }
 
   a {
-    text-decoration: none;
-    font-family: $font-a;
-    font-weight: 600;
-    color: #231F20;
-    font-size: 1.0625rem;
+    width: 100%;
+    display: block;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: $color-red;
+    padding: 10px 15px;
+    border-bottom: 1px solid $grey-light;
+  }
 
-    &:hover {
-      text-decoration: underline;
-      color: #D12026;
+  a:hover, a:focus {
+    background-color: white;
+    color: $color-black;
+    text-decoration: underline;
+  }
+
+  .mobile-menu-icon {
+    padding: 20px 15px;
+    color: $color-black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: white;
+    outline-color: red;
+    font-size: 1.1rem;
+
+    span {
+      font-family: $font-header;
+      padding-left: 10px;
     }
   }
+}
+
+// ------- MEDIA QUERIES -------
+
+// MIN-WIDTH 768px --------------
+
+@media all and (min-width: 768px) {
+
+  header {
+    padding: 0 50px;
+  }
+
+  .a11y-logo {
+    display: block;
+  }
+
+  .menu-items {
+    width: auto;
+
+    ul {
+      display: block;
+      list-style-type: none;
+      padding: 0 0 0 10px;
+      margin: 0;
+    }
+
+    li {
+      display: inline-block;
+      width: auto;
+    }
+
+    a {
+      width: auto;
+      display: inline-block;
+      color: $color-black;
+      font-weight: bold;
+      letter-spacing: normal;
+      background-color: transparent;
+      padding: 10px 10px;
+      border-bottom: none;
+      font-size: 1.0625rem;
+    }
+
+    a:hover, a:focus {
+      background-color: white;
+      color: $color-red;
+      text-decoration: underline;
+    }
+
+    .mobile-menu-icon {
+      display: none;
+    }
+
+  }
+
+  .logo-container {
+    padding: 25px 0;
+
+  }
+
 }

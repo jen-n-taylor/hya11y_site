@@ -9,30 +9,84 @@
   <script src="https://use.fontawesome.com/74ade5236d.js"></script>
 </head>
 <body>
-
+  <!-- Skip Links -->
+    <ul class="skip-links" id="skip-link">
+      <li>
+        <a href="#main">Skip to main</a>
+      </li>
+      <li>
+        <a href="#footer">Skip to footer</a>
+      </li>
+    </ul>
+  <!--  -->
   <header>
-      <a id="skip-link" href="#main">Skip to main content</a>
       <div class="logo-container container">
         <!-- Accessibility, Alfonso Melolonta Urbán, The Noun Project. https://thenounproject.com/term/accessibility/1872/-->
         <svg class="a11y-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M49.863,0C22.324,0,0,22.324,0,49.863s22.324,49.863,49.863,49.863s49.863-22.324,49.863-49.863S77.401,0,49.863,0z   M49.107,9.903c3.572,0,6.464,2.891,6.464,6.44c0,3.572-2.892,6.463-6.464,6.463c-3.547,0-6.438-2.892-6.44-6.463  C42.667,12.794,45.558,9.903,49.107,9.903z M77.05,30.728l-19.184,2.424l0.008,19.204l9.294,31.025  c0.491,1.959-0.687,3.919-2.625,4.403c-1.937,0.484-3.918-0.583-4.406-2.542L50.616,57h-2.932l-8.759,28.828  c-0.733,1.881-2.828,2.746-4.707,2.013c-1.861-0.726-2.997-2.844-2.263-4.725L40,52.67V33.152l-17.674-2.405  c-1.814-0.146-3.046-1.743-2.898-3.557c0.133-1.828,1.783-3.185,3.596-3.039L44.497,26h9.417l22.866-1.885  c1.817-0.073,3.357,1.34,3.418,3.171C80.271,29.104,78.868,30.653,77.05,30.728z"></path></svg>
-        <nav>
+        <nav class="menu-items">
           <ul>
-            <li><a href="index.html#main">Home</a></li>
+            <li><a id="first-link" href="index.html">Home</a></li>
             <li><a href="index.html#about">About Us</a></li>
             <li><a href="index.html#events">Events</a></li>
-            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="#main">Speakers</a></li>
             <li><a href="resources.html">Resources</a></li>
             <li><a href="index.html#contact">Contact</a></li>
           </ul>
+          <a href="" id="pull" class="mobile-menu-icon">&#9776;<span>Menu</span></a>
         </nav>
       </div> <!-- /.logo-container -->
   </header>
-  <main>
-    <h1>Speakers</h1>
-    <p>Check out the speakers from past events</p>
+
+  <main class="speakers-main" id="main">
+    <div class="container">
+
+      <h1>Speakers</h1>
+      <p>Check out speakers from our past events!</p>
+
+      <div class="speaker-event">
+        <h2>An Introduction to Web Accessibility</h2>
+        <p class="talk-date">October 2016</p>
+
+        <div class="speaker-container">
+          <div class="speaker speaker-a">
+            <img src="assets/speakers/newton.jpg" alt="Dave Newton presenting on Universal Web Design">
+            <h3 class="speaker-name">Dave Newton</h3>
+            <h4>Who are you?</h4>
+              <p>This is a seriously deep question that I’m not fully prepared to answer. But:</p>
+              <ul>
+                <li>I’m Dave</li>
+                <li>I’ve been doing web dev for a long time</li>
+                <li>I’m old and cranky</li>
+                <li>I’m pessimistic about how things are but optimistic about how they can be</li>
+              </ul>
+            <h4>Where do you work?</h4>
+              <p>Shopify! I am the front end development lead for sales channels, which are basically “places merchants can sell things”. E.g. Online Store, Point of Sale, Facebook, Pinterest, etc.</p>
+            <h4>What do you do by day?</h4>
+              <p>Because I’m a lead, a lot of my day-to-day is spent planning and organizing and helping set direction for my team. I also spend a bunch of time making sure they have what they need to do their best work, with as few frustrations as possible. Every once in a while I still get to write some code.</p>
+            <h4>Why do you care about accessibility?</h4>
+              <p>I don’t know… I’m colour blind, but I don’t think that has anything to do with it. Mostly I just care because to me it’s part of being good at my job — making an accessible website is just part of making a good website, and I want to make good websites.</p>
+          </div> <!-- /.speaker-a-->
+
+          <div class="speaker speaker-b">
+            <img src="assets/speakers/mahmood.jpg" alt="Haris Mahmood presenting on Building an Accessible Web">
+            <h3 class="speaker-name">Haris Mahmood</h3>
+            <h4>Who are you?</h4>
+              <p>I’m Haris! I’m a fan of the internet, educating + education, kindness and Emma Watson.</p>
+            <h4>Where do you work?</h4>
+              <p>I work at Shopify as a front end developer, and at HackerYou as a lead instructor for the part-time intro and advanced web development courses.</p>
+            <h4>What do you do by day?</h4>
+              <p>I’m part of a small team at Shopify working on the Buy Button platform. I’m responsible for ensuring our front-end is performant, responsive, scalable, and accessible while maintaining the Shopify style guide.</p>
+            <h4>Why do you care about accessibility?</h4>
+              <p>As citizens of the world it can sometimes be difficult to bring about changes in government and policy. The web, however, is a world of its own, and a lot easier to change. We are its caretakers, rule makers, thought leaders and builders, and are all responsible for doing are part to make it an equally accessible platform for everyone.</p>
+          </div> <!-- /.speaker-b -->
+        </div> <!-- /.speaker-container -->
+
+      </div> <!-- /.speaker-event--->
+
+    </div> <!-- /.container -->
   </main>
 
-<footer>
+<footer id="footer">
   <div class="container">
     <p>&copy;	All rights reserved, 2017.</p>
     <div class="social-container">

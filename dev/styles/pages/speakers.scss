@@ -1,0 +1,79 @@
+// ---------- SPEAKERS -----------
+
+.speakers-main {
+  background: $background;
+  padding: 25px;
+}
+
+.speaker-event {
+  margin: 50px 0;
+  background: white;
+  box-shadow: 0 1px 20px 0 rgba(0,0,0,.05);
+  border: 1px solid rgba(146,151,149,0.19);
+
+  h2 {
+    text-align: center;
+    margin: 30px 0 15px 0;
+  }
+
+  .talk-date {
+    text-align: center;
+    font-weight: 600;
+    color: $color-red;
+  }
+}
+
+.speaker-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.speaker {
+  width: 100%;
+  padding: 25px;
+
+  img {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+h3.speaker-name {
+  font-size: 1.5rem;
+  color: $color-red;
+}
+
+// ------- MEDIA QUERIES -------
+
+// MIN-WIDTH 768px --------------
+
+@media all and (min-width: 768px) {
+
+  .speakers-main {
+    background: $background;
+    padding: 50px;
+  }
+
+  .speaker-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .speaker {
+    width: 50%;
+    margin: 25px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  h3.speaker-name {
+    font-size: 1.5rem;
+    color: $color-red;
+  }
+
+
+}

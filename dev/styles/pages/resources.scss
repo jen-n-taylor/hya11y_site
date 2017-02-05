@@ -1,9 +1,42 @@
+// ---------- RESOURCES -----------
+
 .resources-main {
-  padding: 0 50px 30px 50px;
+    background: $background;
+    padding: 25px;
 
   h2 {
-    color: #D12026;
-
-
+    color: $color-black;
   }
+
+  p:first-of-type {
+    width: 60%;
+  }
+}
+
+.resource-container {
+  border-top: 1px solid $grey-dark;
+  padding: 20px 20px;
+  background: white;
+  box-shadow: 0 1px 20px 0 rgba(0,0,0,.05);
+  border: 1px solid rgba(146,151,149,0.19);
+
+  .sublist {
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  li {
+    line-height: 1.75;
+  }
+}
+
+// ------- MEDIA QUERIES -------
+
+// MIN-WIDTH 768px --------------
+
+@media all and (min-width: 768px) {
+  .resources-main {
+    padding: 50px;
+  }
+
 }

@@ -1,6 +1,6 @@
-// ---------- CODE OF CONDUCT -----------
+// ---------- ACCESSIBILITY -----------
 
-.code-main {
+.accessibility-main {
   background: $background;
   padding: 25px;
 
@@ -9,16 +9,12 @@
     margin: 40px 0 10px 0;
   }
 
-  .code-container {
+  .accessibility-container {
     border-top: 1px solid $grey-dark;
     padding: 20px;
     background: white;
     box-shadow: 0 1px 20px 0 rgba(0,0,0,.05);
     border: 1px solid rgba(146,151,149,0.19);
-  }
-
-  .subsection {
-    padding-left: 20px;
   }
 
   h3 {
@@ -30,12 +26,6 @@
   p, li {
     line-height: 1.5;
   }
-
-  .anon-form {
-    width: 100%;
-    height: 800px;
-    margin: 20px 0;
-  }
 }
 
 // ------- MEDIA QUERIES -------
@@ -43,10 +33,10 @@
 // MIN-WIDTH 768px --------------
 
 @media all and (min-width: 768px) {
-  .code-main {
+  .accessibility-main {
     padding: 50px;
 
-    .code-container {
+    .accessibility-container {
       padding: 50px;
       margin-top: 50px;
     }

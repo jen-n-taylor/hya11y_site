@@ -1,12 +1,17 @@
 // --------- MIXINS ---------
 
 // MEDIA QUERIES ----------
+//container max-width: 1146px;
+$media-small: new-breakpoint(min-width 768px 12);
+$media-medium: new-breakpoint(min-width 960px 12);
+$media-large: new-breakpoint(min-width 1024px 12);
+$media-xlarge: new-breakpoint(min-width 1240px);
 
 
 // COLORS -----------------
 
 $color-red: #D12026;
-$color-black: #231F20;
+$color-black: #2b2b2b;
 $color-blue: #26A6C9;
 $grey-light: #EFEFED;
 $grey-border: #EAEBEB;

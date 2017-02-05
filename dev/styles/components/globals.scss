@@ -1,14 +1,40 @@
 // ---------- GLOBALS ----------
 
-
 html {
   font-size: 100%;
   font-family: $font-a;
 }
 
 .container {
+  width: 100%;
   max-width: 1146px;
   margin: 0 auto;
+}
+
+// SKIP LINKS ------------------
+
+.skip-links {
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    background-color: $background;
+    display: block;
+    color: $color-red;
+    font-weight: bold;
+    position: absolute;
+    left: -600000px;
+    padding: 0.5em;
+  }
+
+  a:focus {
+	  left: 0;
+  }
 }
 
 h1 {
@@ -33,10 +59,14 @@ p {
 a {
   text-decoration: none;
   color: $color-red;
-
-
 }
 
+img {
+  box-shadow: 0 1px 20px 0 rgba(0,0,0,.05);
+  border: 1px solid rgba(146,151,149,0.19);
+}
+
+// FOOTER --------------
 
 footer {
   background: $color-black;
@@ -45,8 +75,9 @@ footer {
 
   .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+
   }
 
   .social-container {
@@ -61,7 +92,7 @@ footer {
     a {
       text-decoration: none;
       color: $grey-light;
-      padding-left: 15px;
+      padding-right: 15px;
     }
 
     a:hover {
@@ -69,4 +100,42 @@ footer {
     }
 
   }
+}
+
+// ------- MEDIA QUERIES -------
+
+// MIN-WIDTH 768px --------------
+
+@media all and (min-width: 768px) {
+  footer {
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .social-container {
+      a {
+        padding-left: 15px;
+      }
+    }
+  }
+}
+
+// MIN-WIDTH 960px --------------
+
+@media ($media-medium) {
+
+}
+
+// MIN-WIDTH 1024px --------------
+
+@media ($media-large) {
+
+}
+
+// MIN-WIDTH 1240px --------------
+
+@media ($media-xlarge) {
+
 }
