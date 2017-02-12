@@ -9,13 +9,13 @@
   }
 
   p:first-of-type {
-    width: 60%;
+    width: 100%;
   }
 }
 
 .resource-container {
   border-top: 1px solid $grey-dark;
-  padding: 20px 20px;
+  padding: 20px;
   background: white;
   box-shadow: 0 1px 20px 0 rgba(0,0,0,.05);
   border: 1px solid rgba(146,151,149,0.19);
@@ -37,6 +37,22 @@
 @media all and (min-width: 768px) {
   .resources-main {
     padding: 50px;
+
+    p:first-of-type {
+      width: 75%;
+    }
   }
 
+  .resource-container {
+    padding: 50px 25px;
+  }
+}
+
+@media all and (min-width: 960px) {
+  .resources-main {
+
+    p:first-of-type {
+      width: 60%;
+    }
+  }
 }

@@ -76,13 +76,17 @@ header {
     font-weight: bold;
     letter-spacing: 1px;
     background: white;
-    outline-color: red;
     font-size: 1.1rem;
 
     span {
       font-family: $font-header;
       padding-left: 10px;
     }
+  }
+
+  .mobile-menu-icon:hover, .mobile-menu-icon:focus {
+    color: $color-red;
+    text-decoration: none;
   }
 }
 

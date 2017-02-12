@@ -37,6 +37,12 @@ html {
   }
 }
 
+// .skip-links:focus {
+//   a {
+//     left: 0;
+//   }
+// }
+
 h1 {
   font-family: $font-header;
   font-weight: 700;
@@ -71,28 +77,26 @@ img {
 footer {
   background: $color-black;
   color: $grey-light;
-  padding: 20px 50px;
+  padding: 30px 50px;
+  text-align: center;
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+  p {
+    margin: 0 0 20px 0;
   }
 
-  .social-container {
+  .footer-info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 
     p {
-      margin: 0;
+      margin: 5px 0 0 0;
     }
 
     a {
       text-decoration: none;
       color: $grey-light;
-      padding-right: 15px;
+      // padding-right: 15px;
     }
 
     a:hover {
@@ -114,18 +118,37 @@ footer {
       justify-content: space-between;
     }
 
-    .social-container {
-      a {
-        padding-left: 15px;
-      }
+    .footer-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
     }
   }
 }
 
 // MIN-WIDTH 960px --------------
 
-@media ($media-medium) {
+@media all and (min-width: 960px) {
+  footer {
 
+    p {
+      margin: 0;
+    }
+
+    .footer-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      p {
+        // margin: 0;
+      }
+
+      a {
+        padding: 0 15px;
+      }
+    }
+  }
 }
 
 // MIN-WIDTH 1024px --------------

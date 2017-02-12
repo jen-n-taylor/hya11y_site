@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HackerYou Web Accessibility Club</title>
+  <!-- Styles -->
   <link rel="stylesheet" href="public/styles/style.css">
+  <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/74ade5236d.js"></script>
+  <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
@@ -16,10 +19,10 @@
 <!-- Skip Links -->
   <ul class="skip-links" id="skip-link">
     <li>
-      <a href="#main">Skip to main</a>
+      <a id="skip-link-1" href="#main">Skip to main</a>
     </li>
     <li>
-      <a href="#footer">Skip to footer</a>
+      <a id="skip-link-2" href="#footer">Skip to footer</a>
     </li>
   </ul>
 <!--  -->
@@ -40,17 +43,17 @@
         </ul>
         <a href="" id="pull" class="mobile-menu-icon">&#9776;<span>Menu</span></a>
       </nav>
-    </div> <!-- /.logo-container -->
 
+    </div> <!-- /.logo-container -->
 </header>
 
 <main>
 
-  <section class="hero" id="main" tabindex="0">
+  <section class="hero" id="main">
     <div class="container">
 
       <h1>HackerYou Web Accessibility Club</h1>
-      <p>A group of curious junior developers working to make the web an inclusive space.</p>
+      <p>A meetup for junior developers working to make the web an inclusive space.</p>
     </div>
   </section> <!-- /.hero -->
 
@@ -63,9 +66,9 @@
         </div> <!-- /.about-us-img -->
         <div class="about-us-text">
           <h2>About the Club</h2>
-          <p>The HackerYou Web Accessibility Club was founded by a group of junior web developers studying at HackerYou in Toronto, Ontario.</p>
-          <p>Our goal is to bring students together from diverse backgrounds and unite them under the common objective of understanding the basic principles of universal design and web accessibility.</p>
-          <p>View our <a href="code-of-conduct.html">Code of Conduct</a> for more information on our inclusivity policies.</p>
+          <p>The HackerYou Accessibility Club was founded by 2 students in HackerYou’s immersive bootcamp in the summer of 2016. Initially a conversational lunch gathering, it grew to more formally structured meetings after the founders graduated. The club aims to provide a safe learning environment for junior front-end developers to get a solid introduction to inclusive design and web accessibility practices.</p>
+          <p>We are proud to partner with the accessibility experts at <a href="https://www.meetup.com/a11yTo/">a11yTO</a> to achieve this goal.</p>
+          <!-- <p>View our <a href="code-of-conduct.html">Code of Conduct</a> for more information on our inclusivity policies.</p> -->
         </div> <!-- /.about-us-text -->
       </div> <!-- /.content-container-->
 
@@ -86,9 +89,12 @@
             <h3>Welcome to the World of WCAG 2.0!</h3>
           </div> <!-- /.event-title -->
           <div class="event-info">
-            <p class="date"><strong>When:</strong> February, 2017</p>
-            <p class="location"><strong>Where:</strong> To Be Determined</p>
-            <p>You don’t need to be a WCAG wizard to write accessible code. You don’t even need to know that WCAG stands for Web Content Accessibility Guidelines. Just bring your laptop and hang out with us for an hour of learning!</p>
+            <p class="date"><strong>When:</strong> Monday February 27</p>
+            <div class="location">
+              <p><strong>Where:</strong> Influitive, 111 Peter Street, 3rd Floor, Toronto, Ontario</p>
+              <p>Doors open at 6pm and we get started at 6:30pm.</p>
+            </div>
+            <p>You don’t need to be a WCAG wizard to write accessible code. You don’t even need to know that WCAG stands for Web Content Accessibility Guidelines. Just bring your laptop and join us for a code-along where we'll tackle accessibility "gotchas".</p>
           </div> <!-- /.event-info -->
           <div class="event-details">
             <p>In this session you will learn:</p>
@@ -98,7 +104,14 @@
               <li>The difference between WCAG levels A - AAA</li>
               <li>How to find solutions to common accessibility issues through WCAG</li>
             </ul>
+
+            <p>How to prepare:</p>
+            <ul>
+              <li>Bring your laptop, a powercord, and have your favorite text editor ready!</li>
+              <li>Make sure you have the <a href="https://www.google.com/chrome/">Google Chrome browser</a> downloaded.</li>
+            </ul>
           </div> <!-- /.event-details -->
+
         </div> <!-- /.event-card -->
 
         <div class="event-card">
@@ -111,7 +124,10 @@
           </div> <!-- /.event-title -->
           <div class="event-info">
             <p class="date"><strong>When:</strong> April, 2017</p>
-            <p class="location"><strong>Where:</strong> To Be Determined</p>
+            <div class="location">
+              <p><strong>Where:</strong> Location to be determined (check back soon!)</p>
+              <p>Doors open at 6pm and we get started at 6:30pm.</p>
+            </div>
             <p>Testing your site for screen reader users can be difficult if you don't know how to use one. Bring your laptop (and your headphones) and we'll walk you through the ins and outs of using and testing sites with a screen reader.</p>
           </div> <!-- /.event-info -->
           <div class="event-details">
@@ -120,6 +136,11 @@
               <li>A hands-on session geared towards getting comfortable with a screenreader (VoiceOver for Mac userse or NVDA for Windows users)</li>
               <li>How to navigate a website with a screen reading device</li>
               <li>How to find and implement solutions to common issues for screen reader users</li>
+            </ul>
+            <p>How to prepare:</p>
+            <ul>
+              <li>Bring your laptop, a powercord, and have your favorite text editor ready!</li>
+              <li>Make sure you have the <a href="https://www.google.com/chrome/">Google Chrome browser</a> downloaded.</li>
             </ul>
           </div> <!-- /.event-details -->
 
@@ -148,7 +169,10 @@
           </div> <!-- /.event-title -->
           <div class="event-info">
             <p class="date"><strong>When:</strong> June, 2017</p>
-            <p class="location"><strong>Where:</strong> To Be Determined</p>
+            <div class="location">
+              <p><strong>Where:</strong> Location to be determined (check back soon!)</p>
+              <p>Doors open at 6pm and we get started at 6:30pm.</p>
+            </div>
             <p>Lets take our accessibility skills to the next step by learning the ins and outs of accessibility and JavaScript. Join us for a code along where we show you how to solve common accessibility issues with JavaScript!   </p>
           </div> <!-- /.event-info -->
           <div class="event-details">
@@ -158,6 +182,11 @@
               <li>How to keep websites functional without sacrificing performance</li>
               <li>How to create accessible tooltips</li>
               <li>How to build an accessible slider/carousel</li>
+            </ul>
+            <p>How to prepare:</p>
+            <ul>
+              <li>Bring your laptop, a powercord, and have your favorite text editor ready!</li>
+              <li>Make sure you have the <a href="https://www.google.com/chrome/">Google Chrome browser</a> downloaded.</li>
             </ul>
           </div> <!-- /.event-details -->
         </div> <!-- /.event-card -->
@@ -172,15 +201,15 @@
       <h2>Get in touch</h2>
       <div class="contact-container">
         <div class="contact-a">
-          <p>Do you have questions about the club? Or maybe some tips on how we can make this site more accessible? Please don't hesitate to get in touch! We'd love to hear from you.</p>
+          <p>Do you have questions about the club? Or some tips on how we can make this site more accessible? Please don't hesitate to get in touch! We'd love to hear from you.</p>
           <p>Follow us on <a href="https://twitter.com/hya11y">Twitter</a>.</p>
-          <p>Reach out to us by <a href="mailto:hya11yclub@gmail.com ">email</a>.</p>
+          <p>Get in touch with us by <a href="mailto:hya11yclub@gmail.com ">email</a>.</p>
         </div> <!-- /.contact-a -->
 
         <div class="contact-b">
           <h3>Important Links</h3>
           <p>Take a look at our <a href="code-of-conduct.html">Code of Conduct</a>.</p>
-          <p>Find information on our <a href="resources.html">Resources page</a>.</p>
+          <p>Find information on our <a href="resources.html">Resources Page</a>.</p>
           <p>Check out our friends at <a href="https://www.meetup.com/a11yTo/">#a11yTo</a>!</p>
 
         </div> <!-- /.contact-b -->
@@ -193,14 +222,16 @@
 <footer id="footer">
   <div class="container">
     <p>&copy;	All rights reserved, 2017.</p>
-    <div class="social-container">
-      <a href="https://twitter.com/hya11y" alt="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a href="mailto:hya11yclub@gmail.com" alt="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    <div class="footer-info">
+      <div class="social-container">
+        <a href="https://twitter.com/hya11y" alt="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="mailto:hya11yclub@gmail.com" alt="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </div>
       <p><a href="code-of-conduct.html">Code of Conduct</a></p>
+      <p><a href="accessibility.html">Accessibility Statement</a></p>
     </div>
   </div> <!--/.container -->
 </footer>
-
 
 <script src="public/scripts/main.js"></script>
 

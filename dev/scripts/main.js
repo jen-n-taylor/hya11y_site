@@ -2,7 +2,7 @@
 // Skip Links ---------------------
 
 window.onload = function() {
-  document.getElementById("skip-link").focus();
+  document.getElementById("skip-link-1").focus();
 };
 
 // Mobile Menu --------------------
@@ -10,7 +10,6 @@ window.onload = function() {
  $(function() {
    var pull = $('#pull');
    var menu = $('.menu-items ul');
-   var menuHeight  = menu.height();
    var firstLink = $('#first-link');
 
    $(pull).on('click', function(e) {
@@ -20,9 +19,9 @@ window.onload = function() {
    });
  });
 
- $(window).resize(function(){
-   var windowWidth = $(window).width();
-   if(windowWidth > 320 && menu.is(':hidden')) {
-     menu.removeAttr('style');
-   }
- });
+ // $(window).resize(function(){
+ //   var windowWidth = $(window).width();
+ //   if(windowWidth > 320 && menu.is(':hidden')) {
+ //     menu.removeAttr('style');
+ //   }
+ // });
