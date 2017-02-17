@@ -202,9 +202,13 @@ footer {
       margin: 5px 0 0 0; }
     footer .footer-info a {
       text-decoration: none;
-      color: #EFEFED; }
+      color: #EFEFED;
+      padding: 5px; }
+    footer .footer-info i {
+      display: inline; }
     footer .footer-info a:hover {
-      color: #26A6C9; }
+      background-color: white;
+      color: #D12026; }
 
 @media all and (min-width: 768px) {
   footer .container {

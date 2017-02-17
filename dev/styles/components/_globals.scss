@@ -96,11 +96,16 @@ footer {
     a {
       text-decoration: none;
       color: $grey-light;
-      // padding-right: 15px;
+      padding: 5px;
+    }
+
+    i {
+      display: inline;
     }
 
     a:hover {
-      color: $color-blue;
+      background-color: white;
+      color: $color-red;
     }
 
   }
